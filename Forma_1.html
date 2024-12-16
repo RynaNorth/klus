@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <!-- HTML elements <html> apzīmē dokumenta saknes elementu. Atribūts lang="lv" norāda, ka dokuments ir latviešu valodā. -->
+<head>
+    <!-- HTML elements <meta> norāda dokumenta rakstzīmju kodējumu. UTF-8 atbalsta latviešu valodas simbolus. -->
+    <meta charset="UTF-8">
+
+    <!-- HTML elements <title> nosaka lapas nosaukumu, kas parādīsies pārlūkprogrammas cilnē. -->
+    <title>KĻUS - Pirmā forma</title>
+
+    <!-- HTML elements <link> saista ārēju CSS failu, kas nosaka lapas dizainu un izkārtojumu. -->
+    <link rel="stylesheet" href="Forma_1.css">
+</head>
+<body>
+    <!-- ========================= -->
+    <!-- GALVENAIS KONTEINERS      -->
+    <!-- ========================= -->
+    <!-- HTML elements <div> tiek izmantots kā galvenais konteiners, kas satur divas galvenās sadaļas - kreiso un labo. -->
+    <div class="container">
+
+        <!-- ========================= -->
+        <!-- KREISĀ SADAĻA             -->
+        <!-- ========================= -->
+        <!-- HTML elements <div> tiek izmantots, lai organizētu kreisās sadaļas saturu, kas ietver tekstu un attēlu. -->
+        <div class="left-section">
+            <!-- HTML elements <h1> tiek izmantots galvenā virsraksta attēlošanai. -->
+            <h1>Esi sveicināts<br>KĻUS</h1>
+
+            <!-- HTML elements <hr> balta horizontāla līnija, kas vizuāli atdala virsrakstu no teksta. -->
+            <hr class="white-line">
+
+            <p>Tavas laboratorijas uzskaites sistēma</p>
+
+            <!-- HTML elements <img> attēlo laboratorijas simbolu. -->
+            <img src="KLUS.PNG" alt="Ķīmijas laboratorijas attēls">
+        </div>
+
+        <!-- ========================= -->
+        <!-- LABĀ SADAĻA               -->
+        <!-- ========================= -->
+        <!-- Elements <div> tiek izmantots, lai organizētu labo sadaļu. -->
+        <div class="right-section">
+            <!-- Elements <h1> tiek izmantots kā virsraksts. -->
+            <h1>Ko Tu vēlies darīt<br>šodien?</h1>
+
+            <p>Piekļūsti savas skolas laboratorijai vai aplūko publiski pieejamo<br>informāciju un datus par laboratoriju.</p>
+
+            <!-- ========================= -->
+            <!-- POGU KONTEINERS          -->
+            <!-- ========================= -->
+            <!-- Elements <div> grupē visas pogas kopā, lai tās būtu stilistiski vienādas. -->
+            <div class="buttons-container">
+                <!-- Elements <a> veido pogas, kas ved uz citām lapām. -->
+                <a href="Forma_2.html" class="login-button">Pieslēgties</a>
+                <!-- Elements <a> veido pogu, kas ved uz lapu ar publiskiem datiem. -->
+                <a href="Forma_3.html" class="data-button">Piekļūt publiskiem datiem</a>
+            </div>
+
+            <!-- Poga, kas ļauj lietotājam ziņot par tehniskām kļūdām -->
+            <button type="button" class="error-button">Ziņot par kļūdu</button>
+        </div>
+
+    </div>
+</body>
+</html>

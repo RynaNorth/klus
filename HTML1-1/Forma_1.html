@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <!-- Norāda rakstzīmju kodējumu kā UTF-8, lai atbalstītu latviešu valodas simbolus -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lapai piešķir nosaukumu, kas parādīsies pārlūkprogrammas cilnē -->
+    <title>KĻUS - Pirmā forma</title>
+    <!-- Pievieno ārējo CSS failu, kas satur lapas stilus -->
+    <link rel="stylesheet" href="Forma_1.css"
+</head>
+<body>
+    <!-- Galvenais konteiners, kas satur kreiso un labo sadaļu -->
+    <div class="container">
+
+        <!-- Kreisā sadaļa -->
+        <div class="left-section">
+            <!-- Galvenais virsraksts kreisajā sadaļā ar rindiņas pārtraukumu (br) -->
+            <h1>Esi sveicnāts<br>KĻUS</h1>
+            <!-- Balta horizontāla svītra starp virsrakstu un tekstu -->
+            <hr class="white-line">
+            <!-- Teksts zem virsraksta -->
+            <p>Tavas laboratorijas uzskaites sistēma</p>
+            <!-- Attēls, kas atrodas kreisajā sadaļā -->
+            <img src="KLUS.PNG" alt="Ķīmijas laboratorijas attēls">
+        </div>
+
+        <!-- Labā sadaļa -->
+		<td width="600px" valign="top" style="position: relative; overflow: hidden;"> <!-- Pievienota relative pozīcija, lai fiksētie izmēri netraucētu -->
+        <div class="right-section">
+            <!-- Virsraksts labajā sadaļā ar rindiņas pārtraukumu (br) -->
+            <h1>Ko Tu vēlies darīt<br>šodien?</h1>
+            <!-- Teksts, kas izskaidro lapas funkcionalitāti -->
+            <p>Piekļūsti savas skolas laboratorijai vai aplūko publiski pieejamo<br>informāciju un datus par laboratoriju.</p>
+
+            <!-- Konteiners pogām labajā sadaļā -->
+            <div class="buttons-container">
+                <!-- Poga, lai pieslēgtos sistēmai -->
+                <a href="Forma_2.html" class="login-button">Pieslēgties</a>
+                <!-- Poga, lai piekļūtu publiskiem datiem -->
+                <a href="Forma_3.html" class="data-button">Piekļūt publiskiem datiem</a>
+            </div>
+
+            <!-- Poga, lai ziņotu par kļūdu -->
+            <button type="button" class="error-button">Ziņot par kļūdu</button>
+        </div>
+
+    </div>
+</body>
+</html>

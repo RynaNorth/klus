@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>KĻUS - Otrā Forma</title>
+    <link rel="stylesheet" href="Forma_2.css">
+</head>
+<body>
+    <!-- ========================= -->
+    <!-- GALVENAIS KONTEINERS      -->
+    <!-- ========================= -->
+    <div class="container">
+
+        <!-- ========================= -->
+        <!-- KREISĀ SADAĻA             -->
+        <!-- ========================= -->
+        <!-- Kreisā sadaļa identiska Forma_1.html sadaļai. -->
+        <div class="left-section">
+            <h1>Esi sveicināts<br>KĻUS</h1>
+			
+            <hr class="white-line">
+			
+            <p>Tavas laboratorijas uzskaites sistēma</p>
+			
+            <img src="KLUS.PNG" alt="Ķīmijas laboratorijas attēls">
+        </div>
+
+        <!-- ========================= -->
+        <!-- LABĀ SADAĻA               -->
+        <!-- ========================= -->
+        <div class="right-section">
+		
+        <!-- ========================= -->
+        <!-- NAVIGĀCIJAS SAITE         -->
+        <!-- ========================= -->
+        <!-- Elements <a> izveido klikšķināmu saiti, kas ved lietotāju atpakaļ uz sākumlapu. Klase tiek izmantota stila pielietošanai. -->
+        <a href="Forma_1.html" class="back-link">← Atpakaļ uz sākumlapu</a>
+
+            <!-- Virsraksts, kas ievada pieteikšanās formu -->
+            <h1>Pieslēgties</h1>
+
+            <!-- Teksts, kas norāda, ka šī sadaļa ir paredzēta pieteikšanās funkcijai -->
+            <p>Ķīmijas laboratorijas uzskaites sistēmai</p>
+
+            <!-- ========================= -->
+            <!-- PIETEIKŠANĀS FORMA       -->
+            <!-- ========================= -->
+            <form>
+                <!-- Ievades lauks lietotājvārdam -->
+                <div class="input-group">
+                    <label for="username">Lietotājvārds</label>
+                    <input type="text" id="username" name="username" placeholder="Ievadiet lietotājvārdu">
+                </div>
+
+                <!-- Ievades lauks parolei -->
+                <div class="input-group">
+                    <label for="password">Parole</label>
+                    <input type="password" id="password" name="password" placeholder="Ievadiet paroli">
+                </div>
+
+                <!-- Poga formas iesniegšanai, lai pieteiktos sistēmā -->
+                <button type="submit" class="submit-button">Pieslēgties</button>
+            </form>
+
+            <!-- Saite uz reģistrācijas lapu lietotājiem, kuri vēl nav reģistrējušies -->
+            <p class="register-link">
+                Neesi vēl reģistrējies? <a href="register.html">Izveidot profilu</a>
+            </p>
+
+            <!-- Poga, kas ļauj lietotājam ziņot par tehniskām kļūdām -->
+            <button type="button" class="error-button">Ziņot par kļūdu</button>
+        </div>
+
+    </div>
+</body>
+</html>

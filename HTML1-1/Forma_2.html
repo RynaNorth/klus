@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KĻUS - Otrā Forma</title>
+    <link rel="stylesheet" href="Forma_2.css">
+</head>
+<body>
+    <!-- Konteiners, kas satur abas sadaļas -->
+    <div class="container">
+        <!-- Kreisā sadaļa -->
+        <div class="left-section">
+            <h1>Esi sveicināts<br>KĻUS</h1>
+            <hr class="white-line">
+            <p>Tavas laboratorijas uzskaites sistēma</p>
+            <img src="KLUS.PNG" alt="Ķīmijas laboratorijas attēls">
+        </div>
+
+        <!-- Labā sadaļa -->
+<div class="right-section">
+    <!-- Saite uz sākumlapu, novietota pašā augšā -->
+    <a href="Forma_1.html" class="back-link">&#8592; Atpakaļ uz sākumlapu</a>
+    <h1>Pieslēgties</h1>
+    <p>Ķīmijas laboratorijas uzskaites sistēmai</p>
+
+    <!-- Forma ar ievades laukiem -->
+    <form>
+        <div class="input-group">
+            <label for="username">Lietotājvārds</label>
+            <input type="text" id="username" name="username" placeholder="Ievadiet lietotājvārdu">
+        </div>
+        <div class="input-group">
+            <label for="password">Parole</label>
+            <input type="password" id="password" name="password" placeholder="Ievadiet paroli">
+        </div>
+        <button type="submit" class="submit-button">Pieslēgties</button>
+    </form>
+
+    <p class="register-link">
+        Neesi vēl reģistrējies? <a href="register.html">Izveidot profilu</a>
+    </p>
+    <button type="button" class="error-button">Ziņot par kļūdu</button>
+</div>

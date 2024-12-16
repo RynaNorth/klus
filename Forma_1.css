@@ -1,0 +1,114 @@
+/* ================== */
+/* VISAS LAPAS STILS */
+/* ================== */
+
+/* Body ir galvenais elements. */
+body {
+    font-family: Arial, sans-serif; /* Teksta stils visā lapā. Sans-serif ir rezerves, ja Arial nav pieejams. */
+    margin: 0; /* Noņem ārējās malas ap visu lapu, lai saturs sāktos no malām. */
+    padding: 0; /* Noņem iekšējās atstarpes, lai izvairītos no liekām tukšām vietām. */
+    background-color: white; /* Visas lapas fona krāsa ir balta, lai dizains būtu tīrs. */
+}
+
+/* ========================= */
+/* GALVENAIS KONTEINERS */
+/* ========================= */
+
+/* Šis ir galvenais ietvars, kas satur kreiso un labo sadaļu */
+.container {
+    display: flex; /* Flexbox ļauj viegli novietot kreiso un labo sadaļu blakus horizontāli. */
+    justify-content: space-between; /* Nodrošina vienādu atstarpi starp sadaļām. */
+    background-color: white; /* Baltā krāsa kā konteinera fons. */
+	border: 3px solid gray; /* Gaiši pelēka mala, 3px bieza */
+}
+
+/* ========================= */
+/* KREISĀ SADAĻA */
+/* ========================= */
+
+/* Kreisā sadaļa satur tekstu un attēlu */
+.left-section {
+    width: 40%; /* Kreisā sadaļa aizņem 40% no kopējā konteinera platuma. */
+    background-color: #399AEB; /* Fona krāsa ir zila. */
+    color: white; /* Teksta krāsa ir balta. */
+   display: flex; /* Flexbox ļauj sakārtot tekstu un attēlus vertikāli. */
+    flex-direction: column; /* Visi sadaļas elementi tiek izvietoti kolonnā viens zem otra. */
+    justify-content: center; /* Centrē tekstu un attēlus vertikāli. */
+    align-items: center; /* Horizontāli centrē tekstu un attēlus sadaļā. */
+}
+
+/* Virsraksts kreisajā sadaļā */
+.left-section > h1 {
+    text-align: center; /* Centrē virsraksta tekstu horizontāli. */
+    line-height: 1.5; /* Rindu augstums. */
+}
+
+/* Horizontāla balta līnija zem virsraksta */
+.white-line {
+    border: none; /* Noņem apmales. */
+    border-top: 2px solid white; /* Pievieno baltu līniju. */
+    width: 40%; /* Līnija aizņem 40% no sadaļas platuma. */
+    margin: 15px auto; /* Centrē līniju un pievieno atstarpes virs un zem līnijas. */
+    display: block; /* Padara līniju par bloka elementu. */
+}
+
+/* Attēla stils kreisajā sadaļā */
+.left-section img {
+    width: 100%; /* Attēls aizņem visu sadaļas platumu. */
+    height: auto; /* Augstums automātiski pielāgojas platumam, saglabājot proporcijas. */
+    margin: 40px; /* Pievieno atstarpes virs un zem attēla. */
+}
+
+/* ========================= */
+/* LABĀ SADAĻA */
+/* ========================= */
+
+.right-section {
+    width: 60%; /* Labā sadaļa aizņem 60% no konteinera platuma. */
+    padding: 40px; /* Piešķir lielākas iekšējās atstarpes, lai saturs būtu labi izvietots. */
+    position: relative; /* Ļauj pozicionēt elementus attiecībā pret sadaļu. */
+}
+
+/* Virsraksts labajā sadaļā */
+.right-section > h1 {
+    color: #399AEB; /* Virsraksta "Pieslēgties" teksts ir gaiši zils. */
+    font-size: 30px; /* Teksta izmērs ir 28 pikseļi, lai tas būtu viegli salasāms. */
+    text-align: left; /* Teksts tiek izlīdzināts pa kreisi. */
+    padding-bottom: 10px; /* Atstarpe zem virsraksta, lai tas būtu vizuāli nošķirts. */
+}
+
+/* ========================= */
+/* POGU STILI */
+/* ========================= */
+
+/* Poga "Pieslēgties" */
+.login-button {
+    background-color: #399AEB; /* Pogas fons ir gaiši zils. */
+    color: white; /* Teksta krāsa ir balta. */
+    padding: 10px 20px; /* Atstarpes pogas iekšpusē. */
+    text-decoration: none; /* Noņem pasvītrojumu no teksta. */
+	border: none; /* Nav apmales ap pogu. */
+    display: inline-block; /* Nodrošina, ka poga darbojas kā bloka elements, bet saglabājas rindā. */
+	cursor: pointer;
+}
+
+/* Poga "Piekļūt publiskiem datiem" */
+.data-button {
+    background-color: white; /* Pogas fons ir balts. */
+    color: #399AEB; /* Teksta krāsa ir zila. */
+    padding: 10px 20px; /* Atstarpes pogas iekšpusē. */
+    text-decoration: none; /* Noņem pasvītrojumu no teksta. */
+    border: 2px solid #399AEB; /* Zila apmale ap pogu. */
+    display: inline-block; /* Nodrošina, ka poga darbojas kā bloka elements, bet saglabājas rindā. */
+}
+
+/* Poga "Ziņot par kļūdu" */
+.error-button {
+   background-color: red; /* Pogas fons ir sarkans. */
+    color: white; /* Teksta krāsa ir balta. */
+    padding: 10px 20px; /* Atstarpes pogas iekšpusē. */
+    border: none; /* Nav apmales ap pogu. */
+    position: absolute; /* Poga tiek pozicionēta attiecībā pret labo sadaļu. */
+    bottom: 20px; /* Poga tiek novietota 20px no apakšas. */
+    right: 40px; /* Poga tiek novietota 20px no labās malas. */
+}

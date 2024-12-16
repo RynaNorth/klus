@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Publiskā datubāze</title>
+    <link rel="stylesheet" href="Forma_3.css">
+</head>
+<body>
+    <!-- ========================= -->
+    <!-- GALVENAIS KONTEINERS      -->
+    <!-- ========================= -->
+    <div class="container">
+
+        <!-- ========================= -->
+        <!-- NAVIGĀCIJAS SAITE         -->
+        <!-- ========================= -->
+        <!-- Elements <a> izveido klikšķināmu saiti, kas ved lietotāju atpakaļ uz sākumlapu. Klase tiek izmantota stila pielietošanai. -->
+        <a href="Forma_1.html" class="back-link">← Atpakaļ uz sākumlapu</a>
+
+        <!-- ========================= -->
+        <!-- LAPAS VIRSRKSTS          -->
+        <!-- ========================= -->
+        <!-- Elements <h1> tiek izmantots galvenā virsraksta attēlošanai. -->
+        <h1 class="page-title">Publiskā datubāze</h1>
+
+        <!-- Klase nosaka stilu. -->
+        <p class="subtitle">Šajā datubāzē tu vari apskatīt pieejamās vielas un aprīkojumu</p>
+
+        <!-- ========================= -->
+        <!-- MEKLĒŠANAS LAUKS UN POGAS -->
+        <!-- ========================= -->
+        <!-- Elements <div> tiek izmantots, lai grupētu meklēšanas laukus un pogas. -->
+        <div class="search-area">
+            <!-- Elements <input> tiek izmantots, lai ievadītu tekstu. -->
+            <input type="text" class="search-input" placeholder="Meklēt...">
+
+            <!-- Elements <button> veido pogu, kas izsauc JavaScript funkciju "filterData" ar parametru 'all', lai parādītu visus ierakstus. -->
+            <button id="showAll" class="search-btn">Rādīt visu</button>
+
+            <!-- Elements <button> izsauc JavaScript funkciju "filterData" ar parametru 'vielas', lai parādītu vielas ierakstus. -->
+            <button id="showVielas" class="search-btn">Rādīt vielas</button>
+
+            <!-- Elements <button> izsauc JavaScript funkciju "filterData" ar parametru 'inventars', lai parādītu aprīkojuma ierakstus. -->
+            <button id="showInventars" class="search-btn">Rādīt aprīkojumu</button>
+        </div>
+
+        <!-- ========================= -->
+        <!-- VIZUĀLĀ NODALĪŠANA       -->
+        <!-- ========================= -->
+        <!-- Elements <div> tiek izmantots kā dekoratīvs vizuālais atdalītājs starp sadaļām. Klase "divider" nosaka izskatu. -->
+        <div class="divider"></div>
+
+        <!-- ========================= -->
+        <!-- DATU TABULA               -->
+        <!-- ========================= -->
+        <!-- Elements <table> izveido tabulu datu attēlošanai. Tā satur kolonnu nosaukumus un datus. -->
+        <table class="data-table">
+            <thead>
+                <!-- Elements <thead> norāda uz tabulas galvu. Šeit tiek definētas kolonnas. -->
+                <tr>
+                    <!-- Elements <tr> definē vienu tabulas rindu. Šajā gadījumā tā ir galvenes rinda, kurā ir kolonnu nosaukumi. -->
+                    <!-- Elementss <th> tiek izmantots, lai definētu tabulas kolonnu nosaukumus. Tie parasti ir treknrakstā un centrēti. -->
+                    <th>ID</th> <!-- Kolonna, kas norāda unikālo identifikatoru katram ierakstam -->
+                    <th>Nosaukums</th> <!-- Kolonna, kas norāda vielas vai aprīkojuma nosaukumu -->
+                    <th>Tips</th> <!-- Kolonna, kas norāda, vai ieraksts ir viela vai aprīkojums -->
+                    <th>Apakštips</th> <!-- Kolonna, kas norāda  tipu -->
+                    <th>Skaits</th> <!-- Kolonna, kas norāda daudzumu -->
+                    <th>Svars</th> <!-- Kolonna, kas norāda svaru (ja norādīts) -->
+                    <th>Komentāri</th> <!-- Kolonna, kas satur komentārus -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Elements <tbody> ir rezervēts tabulas datiem, kas tiks pievienoti dinamiski ar JavaScript. -->
+                <!-- Elements <tr> tiek izmantots katrai datu rindai tabulā. Katrs <tr> ietver vairākus <td>, kas attēlo kolonnas datus. -->
+            </tbody>
+        </table>
+
+        <!-- ========================= -->
+        <!-- POGA "ZIŅOT PAR KĻŪDU"   -->
+        <!-- ========================= -->
+        <!-- Elements <button> izveido pogu, kas lietotājam ļauj ziņot par kļūdu datubāzē. Klase "error-btn" nodrošina stilu. -->
+        <button class="error-btn">Ziņot par kļūdu</button>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- JAVA SCRIPT FAILS         -->
+    <!-- ========================= -->
+    <!-- Elements <script> pievieno ārēju JavaScript failu, kas nodrošina lapas funkcionalitāti. -->
+    <script src="script.js"></script>
+</body>
+</html>
